@@ -14,15 +14,20 @@ class Home extends Component {
         return (
             <div className="container">
 
-                <Header />  
+               <div className="header1">
+
+               <Header />  
                 {/* header  */}
+
+               </div>
 
                 <div className="nav">
                     <Menus history={this.props.history} />
                 </div>
+                   
 
                 <div className="main">
-                    {/* <ArticleList history={this.props.history} tags={tags} /> */}
+                    <ArticleList history={this.props.history} tags={tags} />
                 </div>
 
             </div>

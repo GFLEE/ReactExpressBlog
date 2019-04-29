@@ -2,10 +2,18 @@
     width: 64%;
 		margin: 0 auto;
     height: 100%;
+    border:1px solid blue;
 }
 
 
+.header1{
 
+  width:100%;
+  height:auto;
+  border:1px solid red;
+  margin-top:-14%;
+
+}
 
 .nav {
     color: #636363;
@@ -16,6 +24,9 @@
     border-top-right-radius: 0.25em;
     cursor: default;
     text-align: center;
+    border:1px solid blue;
+    margin-top:8%;
+
 }
 
 
@@ -28,15 +39,24 @@ h1  {
   line-height: 1.2;
   color: inherit;
   text-decoration: none;
+  border:1px solid blue;
+
 }
 
 
 .main {
-	background-color: #ffffff;
-	color: #636363;
+  position: absolute;
+  display:block;
+  width:64%;
+  height:auto;
+	background-color: #F6F6F6;
+	color: #555;
 	border-radius: 0.25em;
   padding: 2em;
-  margin-top: 40px;
+  /* margin-top: 30%; */
+  border:1px solid greenyellow;
+  margin-top:28%;
+
 
 }
 

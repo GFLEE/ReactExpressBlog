@@ -1,6 +1,10 @@
 .header {
     padding: 7em 5em 4em 5em ;
     text-align: center;
+    margin-left:0%;
+    border:1px solid yellow;
+    
+
 }
 
 .header h1 {
