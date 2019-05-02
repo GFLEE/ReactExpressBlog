@@ -5,6 +5,7 @@ import Menus from '../../components/Menus/Menus';
 import Footer from '../../components/Footer/Footer';
 import ArticleList from  '../../components/ArticleList/ArticleList';
 import { Redirect } from 'react-router-dom';
+import { Divider } from 'antd';
 
  
 class Home extends Component {
@@ -27,6 +28,8 @@ class Home extends Component {
                    
 
                 <div className="main">
+                {/* <Divider /> */}
+
                     <ArticleList history={this.props.history} tags={tags} />
                 </div>
 

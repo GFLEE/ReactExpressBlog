@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ArticleListCell from '../ArticleListCell/ArticleListCell';
+import { Divider } from 'antd';
 
 const items = [{
     key: '123',
@@ -7,7 +8,8 @@ const items = [{
     time: '2019-10-29',
     viewCount: '100',
     commentCount: '23'
-},{
+}
+,{
     key: '123332',
     title: 'Head2',
     time: '2019-10-29 12:00:00',
@@ -24,12 +26,19 @@ export default class ArticleList extends Component {
         const { tags } = this.props;
         return(
             <div>
+
                 {
                     items.map((item,index) => (
                         <ArticleListCell history={this.props.history} key={index} data={item} tags={tags} />
                     ))
                 }
+
+
+
             </div>
+
+        
+            
         )
 
     }

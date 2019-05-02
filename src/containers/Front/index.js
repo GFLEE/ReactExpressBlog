@@ -18,12 +18,14 @@ class Front extends Component {
         return(
             <div>
                 <div >
+                 
                     <Switch>
                         <Route exact path={url} component={Home}/>
                         <Route path={`/detail/:id`} component={Detail}/>
                         <Route path={`/:tag`} component={Home}/>
                         <Route component={NotFound}/>
                     </Switch>
+               
                 </div>
                 <BackTop />
             </div>

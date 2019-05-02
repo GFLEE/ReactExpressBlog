@@ -16,7 +16,7 @@ import { notification } from 'antd';
 ReactDOM.render(
 
     <Router>
-        <div>
+        <div> 
             <Switch>
                 <Route path='/404' component={NotFound}/>
                 <Route path='/admin' component={Admin}/>              
