@@ -21,11 +21,11 @@ class Front extends Component {
                  
                     <Switch>
                         <Route exact path={url} component={Home}/>
-                        <Route path={`/detail/:id`} component={Detail}/>
+                        <Route path={"/detail/:id"} component={Detail}/>
                         <Route path={`/:tag`} component={Home}/>
                         <Route component={NotFound}/>
                     </Switch>
-               
+                
                 </div>
                 <BackTop />
             </div>
@@ -33,4 +33,4 @@ class Front extends Component {
     }
 }
 
-export default Front;
+// export default Front;

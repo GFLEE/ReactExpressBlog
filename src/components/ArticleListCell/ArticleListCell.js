@@ -1,17 +1,20 @@
 import React, { Component } from 'react'
+// import {withRouter} from "react-router-dom";
 
 import './style.css'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
+import {BrowserRouter as Router, Route, Link, withRouter} from 'react-router-dom'
 
 
-export default class ArticleListCell extends Component {
+ class ArticleListCell extends Component {
 
     render() { 
         return(
             <div className="ac_container" onClick={
                 () => {
-                    this.props.history.push(`/detail/${this.props.data._id}`, {id: this.props.data_id});
+                    this.context.props.history.push(`/detail/${this.props.data._id}`, {id: this.props.data_id});
                     // props.getArticleDetail(props.data_id)
+                    // this.props.his
                 }
               }
             >
@@ -46,3 +49,6 @@ export default class ArticleListCell extends Component {
         )
     }
 }
+
+// export default withRouter(ArticleListCell);
+export default ArticleListCell;
