@@ -7,6 +7,9 @@ import 'antd/dist/antd.css';
 
 const categories = ['Home','iOS','Python','ReactJs'];
 
+
+
+
 export default class Menus extends Component {
     constructor(props) {
         super(props)
@@ -22,7 +25,7 @@ export default class Menus extends Component {
         })
     }
     render() {
-        return (
+        return ( 
             <Menu
                 onClick={this.handleClick}  
                 selectedKeys={[this.state.current]}
